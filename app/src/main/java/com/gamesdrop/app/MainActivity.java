@@ -63,7 +63,7 @@ public class MainActivity extends Activity {
         TextView welcome = label("Бозиҳои дӯстдоштаатро\nпурқувваттар кун!",27,WHITE,true); pad(welcome,0,30,0,8); page.addView(welcome);
         TextView sub = label("Алмос ва хизматрасониҳои бозиро осон интихоб кун.",13,MUTED,false); page.addView(sub);
 
-        LinearLayout hero = column(); hero.setBackground(new GradientDrawable(GradientDrawable.Orientation.TL_BR,new int[]{0xFF694BFF,0xFF302A78})); hero.setCornerRadius(dp(22)); pad(hero,20,20,20,20);
+        LinearLayout hero = column(); hero.setBackground(new GradientDrawable(GradientDrawable.Orientation.TL_BR,new int[]{0xFF694BFF,0xFF302A78})); ((GradientDrawable) hero.getBackground()).setCornerRadius(dp(22)); pad(hero,20,20,20,20);
         TextView tag = label("GAMES DROP  •  TOP-UP",11,0xFFE5DEFF,true); hero.addView(tag);
         TextView heroTitle = label("Омодаӣ ба\nғалабаи нав?",24,WHITE,true); pad(heroTitle,0,14,0,14); hero.addView(heroTitle);
         TextView go = label("КУШОДАНИ МАҒОЗА  ➜",13,0xFF251C55,true); go.setGravity(Gravity.CENTER); go.setBackground(shape(WHITE,14)); pad(go,14,15,14,15);
